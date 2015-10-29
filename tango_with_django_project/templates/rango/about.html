@@ -1,0 +1,32 @@
+{% extends 'rango/base.html'%}
+
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block body_block %}
+<div>
+    <div class="page-header" xmlns="http://www.w3.org/1999/html">
+                <h1><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>About <small>this janky little website</small></h1>
+            </div>
+            <div>
+            <p>All content found here is based on the author's experiences while living
+            in the Middle East.  Most of these things are probably illegal and you
+            shouldn't do them.  For legal reasons, it's all hypothetical, and none of it happened.</p>
+	        <br/>
+            <div>
+	        <p> You can contact the author
+	        <a href="mailto:brianraythomas@gmail.com?Subject=OMG%20I%20luv%20ur%20site%20:)"
+	        target="_top">HERE</a></p>
+	        </div>
+                <div>
+	        <img src="{% static 'images/trooper.jpg' %}" alt = 'Support The Troops' width="75%"/>
+                </div>
+                <br/>
+                <div class="alert alert-success" role="alert">Oh snap! You care enough to check out my 'About' page.</div>
+            <p>visits: {{ visits }}</p>
+            </div>
+</div>
+
+
+{% endblock %}

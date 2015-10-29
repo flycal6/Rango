@@ -1,0 +1,13 @@
+{% extends 'rango/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Restricted Access{% endblock %}
+
+{% block body_block %}
+
+    <div class="page-header"><h1>Private</h1></div>
+    <div class="alert alert-danger" role="alert"><strong>This is a restricted page.  If you are not {{ user.username }} please exit.</strong></div>
+
+    <div>If you are seeing this page then you know the RedWings are the greatest.</div>
+{% endblock %}
