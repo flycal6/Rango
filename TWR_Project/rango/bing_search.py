@@ -1,6 +1,8 @@
 import json
-import urllib, urllib2
-from keys import *
+import urllib
+import urllib2
+
+from bing_keys import secret_bing_api_key
 
 BING_API_KEY = secret_bing_api_key
 

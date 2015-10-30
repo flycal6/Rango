@@ -59,3 +59,5 @@ docs/_build/
 # PyBuilder
 target/
 
+secrets.py
+bing_keys.py

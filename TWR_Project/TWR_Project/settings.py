@@ -10,7 +10,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from secrets import *
+
+from secrets import django_secret_key
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -55,9 +56,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'tango_with_django_project.urls'
+ROOT_URLCONF = 'TWR_Project.urls'
 
-WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
+WSGI_APPLICATION = 'TWR_Project.wsgi.application'
 
 
 # Database
